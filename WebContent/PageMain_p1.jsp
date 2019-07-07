@@ -152,6 +152,11 @@ al.add(gv.getName());
 	width:150px;
 	height:110px;
 	}
+	#bgimg{
+	width:auto;
+	height:435px;
+	margin-top:auto;
+	}
 	table{
 	
 	margin-top:45%;margin-left:10%;
@@ -172,6 +177,13 @@ al.add(gv.getName());
 	}
 	#stardiv{
 	margin-top:8%; margin-left:10%;
+	
+	}
+	#item_{
+	
+	width:auto; 
+	height:435px;
+	margin-top:auto;
 	
 	}
 	}
@@ -214,6 +226,12 @@ al.add(gv.getName());
 	}
 	#stardiv{
 	margin-top:8%; margin-left:8%;
+	
+	}
+	#bgimg{
+	width:auto;
+	height:435px;
+	margin-top:auto;
 	
 	}
 	}
@@ -261,6 +279,13 @@ al.add(gv.getName());
 	}
 	#stardiv{
 	margin-top:8%; margin-left:30%;
+	
+	}
+	#bgimg{
+	margin-top:auto;
+	width:auto;
+	height:435px;
+
 	
 	}
 	}
@@ -385,7 +410,7 @@ section {
     </div>
     </div><br>					
 		<!-- Header -->
-		<header  id="carousel" style="height:500px;">
+		<header  id="carousel" style="height:500px; background-color:black;">
 			<br><br><br>
 	<div class="container">
 		<div class="row">
@@ -413,7 +438,13 @@ section {
 
 				  <!-- Carousel items -->
 				  <div class="carousel-inner">
+				  
 				    <div class="active item">
+						<img id="bgimg" src="images/FIRST.png" class="img-responsive">
+						
+				    </div>
+				    <div class="item">
+				    <img class="img-responsive" src="images/BGI.png">
 				    <div class="quote" ><img src="images/trophy.png"><h1 style="color:black;"><%=month%>월 <%=WeekDay%>주차 Top 5 - 1위</h1></div>
 				 
                         <img class="profile-circle" src="<%=gi.imgarr.get(0)%>"><br>
@@ -432,7 +463,7 @@ section {
 						
 				    	</blockquote>	
 				    </div>
-				    <div class="item">
+				    <div class="item" id="item_">
                       <div class="quote" ><img src="images/top-rated.png"><h1 style="color:black;"><%=month%>월 <%=WeekDay%>주차 Top 5 - 2위</h1></div>
 				 
                         <img class="profile-circle" src="<%=gi.imgarr.get(1)%>"><br>
@@ -508,7 +539,7 @@ section {
 				  </div>
 				</div>
 			</div>							
-		</div>
+		
 	</div>
 
 </header>
